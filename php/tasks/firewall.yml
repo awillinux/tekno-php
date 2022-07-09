@@ -1,0 +1,13 @@
+---
+ - name: Enable httpd service in firewalld
+   firewalld:
+        zone: public
+        service: httpd
+        permanent: yes
+        state: enabled
+
+
+ - name: Reload firewalld service
+   shell: firewall-cmd --reload
+
+

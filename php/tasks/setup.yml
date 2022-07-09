@@ -1,0 +1,8 @@
+---
+ - name: Copy file in default Apache Root directory
+   copy:
+     src: files/info.php
+     dest: /var/www/html
+   notify:
+   - Restart Apache
+

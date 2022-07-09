@@ -1,0 +1,6 @@
+---
+# tasks file for php
+ - include_tasks: pkg.yml
+ - include_tasks: firewall.yml
+ - include_tasks: setup.yml
+
